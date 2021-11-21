@@ -11,14 +11,14 @@
 //struct iosAppTutorialsApp: App {
 //    var body: some Scene {
 //        WindowGroup {
-//            TabView{
+//            TabView {
 //                ScrollingPages()
 //                ScrollingPages()
 //                ScrollingPages()
 //                ScrollingPages()
-//            }
+//            }.tabViewStyle(PageTabViewStyle()).indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
 //
-//            
+//
 //        }
 //    }
 //}

@@ -16,6 +16,8 @@
 		19CDAD0A274AE0980072A155 /* iosAppTutorialsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDAD09274AE0980072A155 /* iosAppTutorialsUITestsLaunchTests.swift */; };
 		19CDAD26274AE5800072A155 /* ScrollingPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDAD25274AE5800072A155 /* ScrollingPages.swift */; };
 		19CDAD2A274AE6270072A155 /* ScrollingViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDAD29274AE6260072A155 /* ScrollingViewMain.swift */; };
+		19CDAD2D274AE9860072A155 /* SpriteKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDAD2C274AE9860072A155 /* SpriteKitView.swift */; };
+		19CDAD30274AEDEC0072A155 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDAD2F274AEDEC0072A155 /* ColorPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		19CDAD09274AE0980072A155 /* iosAppTutorialsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppTutorialsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		19CDAD25274AE5800072A155 /* ScrollingPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingPages.swift; sourceTree = "<group>"; };
 		19CDAD29274AE6260072A155 /* ScrollingViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingViewMain.swift; sourceTree = "<group>"; };
+		19CDAD2C274AE9860072A155 /* SpriteKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitView.swift; sourceTree = "<group>"; };
+		19CDAD2F274AEDEC0072A155 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,8 @@
 		19CDAD22274AE2BF0072A155 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				19CDAD2E274AEDCC0072A155 /* ColorPicker */,
+				19CDAD2B274AE9680072A155 /* SpriteKit */,
 				19CDAD28274AE5E90072A155 /* ScrollingView */,
 				19CDAD27274AE5C40072A155 /* MapKit */,
 			);
@@ -155,6 +161,22 @@
 				19CDAD29274AE6260072A155 /* ScrollingViewMain.swift */,
 			);
 			path = ScrollingView;
+			sourceTree = "<group>";
+		};
+		19CDAD2B274AE9680072A155 /* SpriteKit */ = {
+			isa = PBXGroup;
+			children = (
+				19CDAD2C274AE9860072A155 /* SpriteKitView.swift */,
+			);
+			path = SpriteKit;
+			sourceTree = "<group>";
+		};
+		19CDAD2E274AEDCC0072A155 /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				19CDAD2F274AEDEC0072A155 /* ColorPickerView.swift */,
+			);
+			path = ColorPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,8 +311,10 @@
 			files = (
 				19CDAD26274AE5800072A155 /* ScrollingPages.swift in Sources */,
 				19CDACEF274AE0960072A155 /* Mapkit.swift in Sources */,
+				19CDAD30274AEDEC0072A155 /* ColorPickerView.swift in Sources */,
 				19CDACED274AE0960072A155 /* iosAppTutorialsApp.swift in Sources */,
 				19CDAD2A274AE6270072A155 /* ScrollingViewMain.swift in Sources */,
+				19CDAD2D274AE9860072A155 /* SpriteKitView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

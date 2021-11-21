@@ -11,14 +11,7 @@ import SwiftUI
 struct iosAppTutorialsApp: App {
     var body: some Scene {
         WindowGroup {
-            TabView {
-                ScrollingPages()
-                ScrollingPages()
-                ScrollingPages()
-                ScrollingPages()
-            }.tabViewStyle(PageTabViewStyle()).indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
-            
-            
+            MapkitView()
         }
     }
 }
