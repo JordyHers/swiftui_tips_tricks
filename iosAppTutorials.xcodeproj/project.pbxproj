@@ -14,6 +14,8 @@
 		19CDACFE274AE0980072A155 /* iosAppTutorialsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDACFD274AE0980072A155 /* iosAppTutorialsTests.swift */; };
 		19CDAD08274AE0980072A155 /* iosAppTutorialsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDAD07274AE0980072A155 /* iosAppTutorialsUITests.swift */; };
 		19CDAD0A274AE0980072A155 /* iosAppTutorialsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDAD09274AE0980072A155 /* iosAppTutorialsUITestsLaunchTests.swift */; };
+		19CDAD26274AE5800072A155 /* ScrollingPages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDAD25274AE5800072A155 /* ScrollingPages.swift */; };
+		19CDAD2A274AE6270072A155 /* ScrollingViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDAD29274AE6260072A155 /* ScrollingViewMain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		19CDAD03274AE0980072A155 /* iosAppTutorialsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iosAppTutorialsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CDAD07274AE0980072A155 /* iosAppTutorialsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppTutorialsUITests.swift; sourceTree = "<group>"; };
 		19CDAD09274AE0980072A155 /* iosAppTutorialsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppTutorialsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		19CDAD25274AE5800072A155 /* ScrollingPages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingPages.swift; sourceTree = "<group>"; };
+		19CDAD29274AE6260072A155 /* ScrollingViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingViewMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,9 +134,27 @@
 		19CDAD22274AE2BF0072A155 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				19CDACEE274AE0960072A155 /* Mapkit.swift */,
+				19CDAD28274AE5E90072A155 /* ScrollingView */,
+				19CDAD27274AE5C40072A155 /* MapKit */,
 			);
 			path = views;
+			sourceTree = "<group>";
+		};
+		19CDAD27274AE5C40072A155 /* MapKit */ = {
+			isa = PBXGroup;
+			children = (
+				19CDACEE274AE0960072A155 /* Mapkit.swift */,
+			);
+			path = MapKit;
+			sourceTree = "<group>";
+		};
+		19CDAD28274AE5E90072A155 /* ScrollingView */ = {
+			isa = PBXGroup;
+			children = (
+				19CDAD25274AE5800072A155 /* ScrollingPages.swift */,
+				19CDAD29274AE6260072A155 /* ScrollingViewMain.swift */,
+			);
+			path = ScrollingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +287,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19CDAD26274AE5800072A155 /* ScrollingPages.swift in Sources */,
 				19CDACEF274AE0960072A155 /* Mapkit.swift in Sources */,
 				19CDACED274AE0960072A155 /* iosAppTutorialsApp.swift in Sources */,
+				19CDAD2A274AE6270072A155 /* ScrollingViewMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
