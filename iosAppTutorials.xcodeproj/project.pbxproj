@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		190A2A5B274C0703002B8332 /* LazyVstack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190A2A5A274C0703002B8332 /* LazyVstack.swift */; };
+		190A2A5E274C0A0C002B8332 /* ProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190A2A5D274C0A0C002B8332 /* ProgressIndicatorView.swift */; };
+		190A2A61274C0E96002B8332 /* ExpandingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190A2A60274C0E96002B8332 /* ExpandingListView.swift */; };
+		190A2A64274C13CA002B8332 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190A2A63274C13CA002B8332 /* VideoPlayerView.swift */; };
 		19CDACED274AE0960072A155 /* iosAppTutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDACEC274AE0960072A155 /* iosAppTutorialsApp.swift */; };
 		19CDACEF274AE0960072A155 /* Mapkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDACEE274AE0960072A155 /* Mapkit.swift */; };
 		19CDACF1274AE0980072A155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19CDACF0274AE0980072A155 /* Assets.xcassets */; };
@@ -38,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		190A2A5A274C0703002B8332 /* LazyVstack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVstack.swift; sourceTree = "<group>"; };
+		190A2A5D274C0A0C002B8332 /* ProgressIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorView.swift; sourceTree = "<group>"; };
+		190A2A60274C0E96002B8332 /* ExpandingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingListView.swift; sourceTree = "<group>"; };
+		190A2A63274C13CA002B8332 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		19CDACE9274AE0960072A155 /* iosAppTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosAppTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CDACEC274AE0960072A155 /* iosAppTutorialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppTutorialsApp.swift; sourceTree = "<group>"; };
 		19CDACEE274AE0960072A155 /* Mapkit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapkit.swift; sourceTree = "<group>"; };
@@ -79,6 +87,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		190A2A59274C06CD002B8332 /* LazyVStack */ = {
+			isa = PBXGroup;
+			children = (
+				190A2A5A274C0703002B8332 /* LazyVstack.swift */,
+			);
+			path = LazyVStack;
+			sourceTree = "<group>";
+		};
+		190A2A5C274C09F4002B8332 /* ProgessIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				190A2A5D274C0A0C002B8332 /* ProgressIndicatorView.swift */,
+			);
+			path = ProgessIndicator;
+			sourceTree = "<group>";
+		};
+		190A2A5F274C0E7A002B8332 /* ExpandingList */ = {
+			isa = PBXGroup;
+			children = (
+				190A2A60274C0E96002B8332 /* ExpandingListView.swift */,
+			);
+			path = ExpandingList;
+			sourceTree = "<group>";
+		};
+		190A2A62274C13A3002B8332 /* VideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				190A2A63274C13CA002B8332 /* VideoPlayerView.swift */,
+			);
+			path = VideoPlayer;
+			sourceTree = "<group>";
+		};
 		19CDACE0274AE0960072A155 = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +178,10 @@
 		19CDAD22274AE2BF0072A155 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				190A2A62274C13A3002B8332 /* VideoPlayer */,
+				190A2A5F274C0E7A002B8332 /* ExpandingList */,
+				190A2A5C274C09F4002B8332 /* ProgessIndicator */,
+				190A2A59274C06CD002B8332 /* LazyVStack */,
 				19CDAD2E274AEDCC0072A155 /* ColorPicker */,
 				19CDAD2B274AE9680072A155 /* SpriteKit */,
 				19CDAD28274AE5E90072A155 /* ScrollingView */,
@@ -309,12 +353,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190A2A5B274C0703002B8332 /* LazyVstack.swift in Sources */,
 				19CDAD26274AE5800072A155 /* ScrollingPages.swift in Sources */,
 				19CDACEF274AE0960072A155 /* Mapkit.swift in Sources */,
+				190A2A5E274C0A0C002B8332 /* ProgressIndicatorView.swift in Sources */,
 				19CDAD30274AEDEC0072A155 /* ColorPickerView.swift in Sources */,
 				19CDACED274AE0960072A155 /* iosAppTutorialsApp.swift in Sources */,
 				19CDAD2A274AE6270072A155 /* ScrollingViewMain.swift in Sources */,
+				190A2A61274C0E96002B8332 /* ExpandingListView.swift in Sources */,
 				19CDAD2D274AE9860072A155 /* SpriteKitView.swift in Sources */,
+				190A2A64274C13CA002B8332 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
