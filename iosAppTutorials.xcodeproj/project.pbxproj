@@ -11,6 +11,7 @@
 		190A2A5E274C0A0C002B8332 /* ProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190A2A5D274C0A0C002B8332 /* ProgressIndicatorView.swift */; };
 		190A2A61274C0E96002B8332 /* ExpandingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190A2A60274C0E96002B8332 /* ExpandingListView.swift */; };
 		190A2A64274C13CA002B8332 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190A2A63274C13CA002B8332 /* VideoPlayerView.swift */; };
+		1986AF4F274D6C76000625E8 /* TextAndIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1986AF4E274D6C76000625E8 /* TextAndIconView.swift */; };
 		19CDACED274AE0960072A155 /* iosAppTutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDACEC274AE0960072A155 /* iosAppTutorialsApp.swift */; };
 		19CDACEF274AE0960072A155 /* Mapkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDACEE274AE0960072A155 /* Mapkit.swift */; };
 		19CDACF1274AE0980072A155 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19CDACF0274AE0980072A155 /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		190A2A5D274C0A0C002B8332 /* ProgressIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorView.swift; sourceTree = "<group>"; };
 		190A2A60274C0E96002B8332 /* ExpandingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingListView.swift; sourceTree = "<group>"; };
 		190A2A63274C13CA002B8332 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		1986AF4E274D6C76000625E8 /* TextAndIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAndIconView.swift; sourceTree = "<group>"; };
 		19CDACE9274AE0960072A155 /* iosAppTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosAppTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CDACEC274AE0960072A155 /* iosAppTutorialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppTutorialsApp.swift; sourceTree = "<group>"; };
 		19CDACEE274AE0960072A155 /* Mapkit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapkit.swift; sourceTree = "<group>"; };
@@ -119,6 +121,14 @@
 			path = VideoPlayer;
 			sourceTree = "<group>";
 		};
+		1986AF4D274D6C5E000625E8 /* TextAndIcon */ = {
+			isa = PBXGroup;
+			children = (
+				1986AF4E274D6C76000625E8 /* TextAndIconView.swift */,
+			);
+			path = TextAndIcon;
+			sourceTree = "<group>";
+		};
 		19CDACE0274AE0960072A155 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +188,7 @@
 		19CDAD22274AE2BF0072A155 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				1986AF4D274D6C5E000625E8 /* TextAndIcon */,
 				190A2A62274C13A3002B8332 /* VideoPlayer */,
 				190A2A5F274C0E7A002B8332 /* ExpandingList */,
 				190A2A5C274C09F4002B8332 /* ProgessIndicator */,
@@ -356,6 +367,7 @@
 				190A2A5B274C0703002B8332 /* LazyVstack.swift in Sources */,
 				19CDAD26274AE5800072A155 /* ScrollingPages.swift in Sources */,
 				19CDACEF274AE0960072A155 /* Mapkit.swift in Sources */,
+				1986AF4F274D6C76000625E8 /* TextAndIconView.swift in Sources */,
 				190A2A5E274C0A0C002B8332 /* ProgressIndicatorView.swift in Sources */,
 				19CDAD30274AEDEC0072A155 /* ColorPickerView.swift in Sources */,
 				19CDACED274AE0960072A155 /* iosAppTutorialsApp.swift in Sources */,
