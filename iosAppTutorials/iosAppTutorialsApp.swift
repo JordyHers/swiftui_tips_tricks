@@ -11,8 +11,7 @@ import SwiftUI
 struct iosAppTutorialsApp: App {
     var body: some Scene {
         WindowGroup {
-            VideoPlayerView()
-            
+                    DisclosureGroupView()
         }
     }
 }
