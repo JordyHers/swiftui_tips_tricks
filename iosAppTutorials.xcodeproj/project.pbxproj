@@ -27,6 +27,8 @@
 		19CDAD2A274AE6270072A155 /* ScrollingViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDAD29274AE6260072A155 /* ScrollingViewMain.swift */; };
 		19CDAD2D274AE9860072A155 /* SpriteKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDAD2C274AE9860072A155 /* SpriteKitView.swift */; };
 		19CDAD30274AEDEC0072A155 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDAD2F274AEDEC0072A155 /* ColorPickerView.swift */; };
+		19EF9A42275008580075D4B4 /* FileDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF9A41275008580075D4B4 /* FileDocumentView.swift */; };
+		19EF9A4427500D300075D4B4 /* FileDocumentViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF9A4327500D300075D4B4 /* FileDocumentViewMain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		19CDAD29274AE6260072A155 /* ScrollingViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingViewMain.swift; sourceTree = "<group>"; };
 		19CDAD2C274AE9860072A155 /* SpriteKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitView.swift; sourceTree = "<group>"; };
 		19CDAD2F274AEDEC0072A155 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		19EF9A41275008580075D4B4 /* FileDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDocumentView.swift; sourceTree = "<group>"; };
+		19EF9A4327500D300075D4B4 /* FileDocumentViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDocumentViewMain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +232,7 @@
 		19CDAD22274AE2BF0072A155 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				19EF9A402750083A0075D4B4 /* FileDocument */,
 				1908642F274EAF700062F6FF /* SideBar_iPadOs */,
 				1908642C274EAD2C0062F6FF /* DisclosureGroup */,
 				19086429274EAB8E0062F6FF /* DatePicker */,
@@ -276,6 +281,15 @@
 				19CDAD2F274AEDEC0072A155 /* ColorPickerView.swift */,
 			);
 			path = ColorPicker;
+			sourceTree = "<group>";
+		};
+		19EF9A402750083A0075D4B4 /* FileDocument */ = {
+			isa = PBXGroup;
+			children = (
+				19EF9A41275008580075D4B4 /* FileDocumentView.swift */,
+				19EF9A4327500D300075D4B4 /* FileDocumentViewMain.swift */,
+			);
+			path = FileDocument;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,6 +425,7 @@
 				190A2A5B274C0703002B8332 /* LazyVstack.swift in Sources */,
 				19CDAD26274AE5800072A155 /* ScrollingPages.swift in Sources */,
 				19CDACEF274AE0960072A155 /* Mapkit.swift in Sources */,
+				19EF9A4427500D300075D4B4 /* FileDocumentViewMain.swift in Sources */,
 				19086428274EA7680062F6FF /* WebLinkView.swift in Sources */,
 				1986AF4F274D6C76000625E8 /* TextAndIconView.swift in Sources */,
 				190A2A5E274C0A0C002B8332 /* ProgressIndicatorView.swift in Sources */,
@@ -419,6 +434,7 @@
 				1908642B274EABA50062F6FF /* DatePicker.swift in Sources */,
 				19CDACED274AE0960072A155 /* iosAppTutorialsApp.swift in Sources */,
 				19CDAD2A274AE6270072A155 /* ScrollingViewMain.swift in Sources */,
+				19EF9A42275008580075D4B4 /* FileDocumentView.swift in Sources */,
 				1908642E274EAD4F0062F6FF /* DisclosureGroup.swift in Sources */,
 				190A2A61274C0E96002B8332 /* ExpandingListView.swift in Sources */,
 				19CDAD2D274AE9860072A155 /* SpriteKitView.swift in Sources */,
