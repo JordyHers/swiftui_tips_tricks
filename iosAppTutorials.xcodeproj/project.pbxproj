@@ -29,6 +29,7 @@
 		19CDAD30274AEDEC0072A155 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDAD2F274AEDEC0072A155 /* ColorPickerView.swift */; };
 		19EF9A42275008580075D4B4 /* FileDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF9A41275008580075D4B4 /* FileDocumentView.swift */; };
 		19EF9A4427500D300075D4B4 /* FileDocumentViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF9A4327500D300075D4B4 /* FileDocumentViewMain.swift */; };
+		19EF9A46275014890075D4B4 /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF9A45275014890075D4B4 /* StateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		19CDAD2F274AEDEC0072A155 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		19EF9A41275008580075D4B4 /* FileDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDocumentView.swift; sourceTree = "<group>"; };
 		19EF9A4327500D300075D4B4 /* FileDocumentViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDocumentViewMain.swift; sourceTree = "<group>"; };
+		19EF9A45275014890075D4B4 /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +248,7 @@
 				19CDAD2B274AE9680072A155 /* SpriteKit */,
 				19CDAD28274AE5E90072A155 /* ScrollingView */,
 				19CDAD27274AE5C40072A155 /* MapKit */,
+				19EF9A45275014890075D4B4 /* StateView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				19EF9A4427500D300075D4B4 /* FileDocumentViewMain.swift in Sources */,
 				19086428274EA7680062F6FF /* WebLinkView.swift in Sources */,
 				1986AF4F274D6C76000625E8 /* TextAndIconView.swift in Sources */,
+				19EF9A46275014890075D4B4 /* StateView.swift in Sources */,
 				190A2A5E274C0A0C002B8332 /* ProgressIndicatorView.swift in Sources */,
 				19CDAD30274AEDEC0072A155 /* ColorPickerView.swift in Sources */,
 				19086431274EAF950062F6FF /* SideBariPadOs.swift in Sources */,
