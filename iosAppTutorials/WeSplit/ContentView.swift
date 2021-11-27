@@ -14,7 +14,7 @@ struct ContentViewWeSplit: View {
     var body: some View {
         
         Button("Tap count: \(tapCount)") {
-            tapCount += 1
+            tapCount += 10
         }
       
     }
