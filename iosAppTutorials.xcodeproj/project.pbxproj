@@ -29,6 +29,8 @@
 		19CDAD30274AEDEC0072A155 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDAD2F274AEDEC0072A155 /* ColorPickerView.swift */; };
 		19ED522B2751527900ADA61F /* WeSplitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED522A2751527900ADA61F /* WeSplitApp.swift */; };
 		19ED522D275152C200ADA61F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19ED522C275152C200ADA61F /* ContentView.swift */; };
+		19EF710F2756A5510088D7AA /* HotProspects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF710E2756A5510088D7AA /* HotProspects.swift */; };
+		19EF71112756A55F0088D7AA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF71102756A55F0088D7AA /* ContentView.swift */; };
 		19EF9A42275008580075D4B4 /* FileDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF9A41275008580075D4B4 /* FileDocumentView.swift */; };
 		19EF9A4427500D300075D4B4 /* FileDocumentViewMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF9A4327500D300075D4B4 /* FileDocumentViewMain.swift */; };
 		19EF9A46275014890075D4B4 /* StateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EF9A45275014890075D4B4 /* StateView.swift */; };
@@ -77,6 +79,8 @@
 		19CDAD2F274AEDEC0072A155 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
 		19ED522A2751527900ADA61F /* WeSplitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeSplitApp.swift; sourceTree = "<group>"; };
 		19ED522C275152C200ADA61F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		19EF710E2756A5510088D7AA /* HotProspects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotProspects.swift; sourceTree = "<group>"; };
+		19EF71102756A55F0088D7AA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		19EF9A41275008580075D4B4 /* FileDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDocumentView.swift; sourceTree = "<group>"; };
 		19EF9A4327500D300075D4B4 /* FileDocumentViewMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDocumentViewMain.swift; sourceTree = "<group>"; };
 		19EF9A45275014890075D4B4 /* StateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateView.swift; sourceTree = "<group>"; };
@@ -202,6 +206,7 @@
 		19CDACEB274AE0960072A155 /* iosAppTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				19EF710D2756A5170088D7AA /* HotProspects */,
 				19ED52292751525000ADA61F /* WeSplit */,
 				19CDAD22274AE2BF0072A155 /* views */,
 				19CDACEC274AE0960072A155 /* iosAppTutorialsApp.swift */,
@@ -298,6 +303,15 @@
 				19ED522C275152C200ADA61F /* ContentView.swift */,
 			);
 			path = WeSplit;
+			sourceTree = "<group>";
+		};
+		19EF710D2756A5170088D7AA /* HotProspects */ = {
+			isa = PBXGroup;
+			children = (
+				19EF710E2756A5510088D7AA /* HotProspects.swift */,
+				19EF71102756A55F0088D7AA /* ContentView.swift */,
+			);
+			path = HotProspects;
 			sourceTree = "<group>";
 		};
 		19EF9A402750083A0075D4B4 /* FileDocument */ = {
@@ -446,10 +460,12 @@
 				19EF9A4427500D300075D4B4 /* FileDocumentViewMain.swift in Sources */,
 				19086428274EA7680062F6FF /* WebLinkView.swift in Sources */,
 				19ED522D275152C200ADA61F /* ContentView.swift in Sources */,
+				19EF710F2756A5510088D7AA /* HotProspects.swift in Sources */,
 				1986AF4F274D6C76000625E8 /* TextAndIconView.swift in Sources */,
 				19EF9A46275014890075D4B4 /* StateView.swift in Sources */,
 				190A2A5E274C0A0C002B8332 /* ProgressIndicatorView.swift in Sources */,
 				19CDAD30274AEDEC0072A155 /* ColorPickerView.swift in Sources */,
+				19EF71112756A55F0088D7AA /* ContentView.swift in Sources */,
 				19086431274EAF950062F6FF /* SideBariPadOs.swift in Sources */,
 				1908642B274EABA50062F6FF /* DatePicker.swift in Sources */,
 				19CDACED274AE0960072A155 /* iosAppTutorialsApp.swift in Sources */,

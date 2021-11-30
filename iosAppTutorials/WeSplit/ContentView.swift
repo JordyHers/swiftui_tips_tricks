@@ -11,7 +11,23 @@ struct ContentViewWeSplit: View {
     @State private var checkAmount = 0.0
     @State private var numberOfPeople = 2
     @State private var tipPercentage = 20
+    ///Here the focus state variable sets up the states of the focus on the TextField. In order to dismiss the keyboard when
+    ///it is not used.
+    @FocusState private var amountIsFocused: Bool
+    
      let tipPercentages = [0,5,10,15,20,25]
+    
+    var totalPerPerson: Double {
+         ///Calculate the total per person here
+        let peopleCount = Double(numberOfPeople + 2)
+        let tipSelection = Double(tipPercentage)
+        
+        let tipValue = checkAmount / 100 * tipSelection
+        let grandTotal = checkAmount + tipValue
+        let amountPerPerson = grandTotal / peopleCount
+        
+        return amountPerPerson
+    }
     var body: some View {
         NavigationView {
             Form {
@@ -19,6 +35,8 @@ struct ContentViewWeSplit: View {
                     ///Here Locale is a struct build in SwiftUI that gives us access to locale types of data
                     TextField("Amount",value: $checkAmount,format: .currency(code: Locale.current.currencyCode ?? "USD"))
                         .keyboardType(.decimalPad)
+                        .focused($amountIsFocused)
+                
                     ///Set up a picker to get the number of people
                     Picker("Number of people", selection: $numberOfPeople) {
                         ForEach(2..<100){
@@ -41,10 +59,20 @@ struct ContentViewWeSplit: View {
                 
                 Section {
                     ///Here Locale is a struct build in SwiftUI that gives us access to locale types of data
-                    Text(checkAmount,format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                    Text(totalPerPerson,format: .currency(code: Locale.current.currencyCode ?? "USD"))
                 }
-            }.navigationTitle("Tipsy")
-               
+            }
+            .navigationTitle("Tipsy")
+             .toolbar {
+                 //The toolbar is a new feature to SwiftUI / Inside we need to provide a
+                 //ToolbarItemGroup. Inside I provide the location of my toolbar
+                 ToolbarItemGroup(placement: .keyboard) {
+                     Spacer() 
+                     Button("Done") {
+                         amountIsFocused = false
+                     }
+                 }
+                }
         }
        
     }
