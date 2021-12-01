@@ -44,7 +44,7 @@ struct TabViewContent: View {
                     Text("One")
                 }
                 .tag("Tab1")
-            Text("Setting")
+            PublishingObservableObject()
                 .onTapGesture {
                     self.selectedTab = 2
                 }
