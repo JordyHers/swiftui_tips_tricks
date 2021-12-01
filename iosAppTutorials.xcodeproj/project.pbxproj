@@ -11,6 +11,8 @@
 		190515B42757F38200A7D0CA /* ImageHotProspects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190515B32757F38200A7D0CA /* ImageHotProspects.swift */; };
 		190515B62757F67200A7D0CA /* ContextMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190515B52757F67200A7D0CA /* ContextMenu.swift */; };
 		190515B8275810C400A7D0CA /* localNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190515B7275810C400A7D0CA /* localNotifications.swift */; };
+		190515BB2758172900A7D0CA /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = 190515BA2758172900A7D0CA /* SamplePackage */; };
+		190515BD2758174000A7D0CA /* SamplePackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190515BC2758174000A7D0CA /* SamplePackage.swift */; };
 		19086428274EA7680062F6FF /* WebLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19086427274EA7680062F6FF /* WebLinkView.swift */; };
 		1908642B274EABA50062F6FF /* DatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1908642A274EABA50062F6FF /* DatePicker.swift */; };
 		1908642E274EAD4F0062F6FF /* DisclosureGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1908642D274EAD4F0062F6FF /* DisclosureGroup.swift */; };
@@ -63,6 +65,7 @@
 		190515B32757F38200A7D0CA /* ImageHotProspects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHotProspects.swift; sourceTree = "<group>"; };
 		190515B52757F67200A7D0CA /* ContextMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContextMenu.swift; sourceTree = "<group>"; };
 		190515B7275810C400A7D0CA /* localNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localNotifications.swift; sourceTree = "<group>"; };
+		190515BC2758174000A7D0CA /* SamplePackage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePackage.swift; sourceTree = "<group>"; };
 		19086427274EA7680062F6FF /* WebLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebLinkView.swift; sourceTree = "<group>"; };
 		1908642A274EABA50062F6FF /* DatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePicker.swift; sourceTree = "<group>"; };
 		1908642D274EAD4F0062F6FF /* DisclosureGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisclosureGroup.swift; sourceTree = "<group>"; };
@@ -101,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				190515BB2758172900A7D0CA /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +125,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		190515BE2758197700A7D0CA /* requirements */ = {
+			isa = PBXGroup;
+			children = (
+				19EF71102756A55F0088D7AA /* HotProspectsContentView.swift */,
+				19EF71122756ADC90088D7AA /* TabView.swift */,
+				190515B12757EED900A7D0CA /* PublishingObservableObject.swift */,
+				190515B32757F38200A7D0CA /* ImageHotProspects.swift */,
+				190515B52757F67200A7D0CA /* ContextMenu.swift */,
+				190515B7275810C400A7D0CA /* localNotifications.swift */,
+				190515BC2758174000A7D0CA /* SamplePackage.swift */,
+			);
+			path = requirements;
+			sourceTree = "<group>";
+		};
 		19086426274EA7480062F6FF /* WebLinkSafari */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,13 +336,8 @@
 		19EF710D2756A5170088D7AA /* HotProspects */ = {
 			isa = PBXGroup;
 			children = (
+				190515BE2758197700A7D0CA /* requirements */,
 				19EF710E2756A5510088D7AA /* HotProspects.swift */,
-				19EF71102756A55F0088D7AA /* HotProspectsContentView.swift */,
-				19EF71122756ADC90088D7AA /* TabView.swift */,
-				190515B12757EED900A7D0CA /* PublishingObservableObject.swift */,
-				190515B32757F38200A7D0CA /* ImageHotProspects.swift */,
-				190515B52757F67200A7D0CA /* ContextMenu.swift */,
-				190515B7275810C400A7D0CA /* localNotifications.swift */,
 			);
 			path = HotProspects;
 			sourceTree = "<group>";
@@ -354,6 +367,9 @@
 			dependencies = (
 			);
 			name = iosAppTutorials;
+			packageProductDependencies = (
+				190515BA2758172900A7D0CA /* SamplePackage */,
+			);
 			productName = iosAppTutorials;
 			productReference = 19CDACE9274AE0960072A155 /* iosAppTutorials.app */;
 			productType = "com.apple.product-type.application";
@@ -426,6 +442,9 @@
 				Base,
 			);
 			mainGroup = 19CDACE0274AE0960072A155;
+			packageReferences = (
+				190515B92758172900A7D0CA /* XCRemoteSwiftPackageReference "SamplePackage" */,
+			);
 			productRefGroup = 19CDACEA274AE0960072A155 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -492,6 +511,7 @@
 				1908642E274EAD4F0062F6FF /* DisclosureGroup.swift in Sources */,
 				190A2A61274C0E96002B8332 /* ExpandingListView.swift in Sources */,
 				19EF71132756ADC90088D7AA /* TabView.swift in Sources */,
+				190515BD2758174000A7D0CA /* SamplePackage.swift in Sources */,
 				19CDAD2D274AE9860072A155 /* SpriteKitView.swift in Sources */,
 				190515B62757F67200A7D0CA /* ContextMenu.swift in Sources */,
 				190A2A64274C13CA002B8332 /* VideoPlayerView.swift in Sources */,
@@ -841,6 +861,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		190515B92758172900A7D0CA /* XCRemoteSwiftPackageReference "SamplePackage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/SamplePackage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		190515BA2758172900A7D0CA /* SamplePackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 190515B92758172900A7D0CA /* XCRemoteSwiftPackageReference "SamplePackage" */;
+			productName = SamplePackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19CDACE1274AE0960072A155 /* Project object */;
 }
