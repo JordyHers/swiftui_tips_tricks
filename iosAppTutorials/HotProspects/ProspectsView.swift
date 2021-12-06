@@ -91,6 +91,8 @@ struct ProspectsView: View {
                 let details = code.components(separatedBy: "\n")
                 guard details.count == 2 else { return }
                 
+                
+                //Here we set up the person
                 let person = Prospect()
                 person.name = details[0]
                 person.emailAddress = details[1]
