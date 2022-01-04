@@ -18,7 +18,7 @@ class Prospects: ObservableObject {
     //her we initiate the Provider package class then in the Landing page we need to call it	
     @Published var people: [Prospect]
     
-    //Adding options with a context menu – Hot Prospects SwiftUI Tutorial 14/16
+    //121.Adding options with a context menu – Hot Prospects SwiftUI Tutorial 14/16
     let prospect1 = Prospect()
     let prospect2 = Prospect()
     let prospect3 = Prospect()
