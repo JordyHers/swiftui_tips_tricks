@@ -59,17 +59,18 @@ struct ProspectsView: View {
                         Text(prospect.emailAddress)
                             .foregroundColor(.secondary)
                         
-                    }   .swipeActions {
+                    } .swipeActions {
                         if prospect.isContacted {
                             Button {
-                                prospect.isContacted.toggle()
+                                prospects.toggle(prospect)
                             } label: {
                                 Label("Mark as Uncontacted", systemImage: "person.crop.circle.badge.xmark ")
                               }
                             .tint(.blue)
                         }else {
                             Button {
-                                prospect.isContacted.toggle()
+                                prospects.toggle(prospect)
+
                             } label: {
                                 Label("Mark Contacted", systemImage: "person.crop.circle.fill.badge.checkmark")
                               }
@@ -112,7 +113,7 @@ struct ProspectsView: View {
                 let person = Prospect()
                 person.name = details[0]
                 person.emailAddress = details[1]
-                self.prospects.people.append(person)
+                prospects.add(person)
 
             case .failure(let error):
                 print("Sanning Failed \(error)")
