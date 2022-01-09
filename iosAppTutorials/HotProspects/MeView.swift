@@ -13,6 +13,7 @@ import SwiftUI
 struct MeView: View {
     @State private var name = "Anonymous"
     @State private var emailAddress = "you@site.com"
+    @State private var qrCode = UIImage()
     
     
     //Then we call two classes context and filter
@@ -21,7 +22,7 @@ struct MeView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
+            Form {
                 TextField("Name",text: $name)
                     .textContentType(.name)
                     .font(.title)
@@ -32,17 +33,31 @@ struct MeView: View {
                     .textContentType(.name)
                     .font(.title)
                     .padding([.horizontal,.bottom])
-                Image(uiImage: generateQrCode(from: "\(name)\n\(emailAddress)"))
-                    .interpolation(.none)
+                Image(uiImage: qrCode)
                     .resizable()
+                    .interpolation(.none)
                     .scaledToFit()
                     .frame(width:200, height:200)
+                    .contextMenu {
+                        Button {
+                            //save my code
+                            let imageSaver = ImageSaver()
+                            imageSaver.writeToPhotoAlbum(image: qrCode)
+                        } label: {
+                           Label("Save to Photos", systemImage: "square.and.arrow.down")
+                        }
+                    }
                 Spacer()
             }
             .navigationBarTitle("Your code")
+            .onAppear(perform: updateCode)
+            .onChange(of: name) { _ in updateCode() }
+            .onChange(of: emailAddress) { _ in updateCode() }
         }
     }
-    
+    func updateCode() {
+        qrCode = generateQrCode(from: "\(name)\n\(emailAddress)")
+    }
     
     //This function takes care of creating the QRCode image
     func generateQrCode (from string: String) -> UIImage {

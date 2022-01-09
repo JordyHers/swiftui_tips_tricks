@@ -35,9 +35,6 @@ struct ProspectsView: View {
         }
     }
     
-  
-    
-    
     //The filteredProspects is a list sorted using in SwiftUI [_.filter]
     var filteredProspects: [Prospect] {
         switch filter {

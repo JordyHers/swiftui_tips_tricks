@@ -21,6 +21,7 @@
 		190A2A5E274C0A0C002B8332 /* ProgressIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190A2A5D274C0A0C002B8332 /* ProgressIndicatorView.swift */; };
 		190A2A61274C0E96002B8332 /* ExpandingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190A2A60274C0E96002B8332 /* ExpandingListView.swift */; };
 		190A2A64274C13CA002B8332 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190A2A63274C13CA002B8332 /* VideoPlayerView.swift */; };
+		1920BE92278B2889009AA5F8 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1920BE91278B2889009AA5F8 /* ImageSaver.swift */; };
 		1986AF4F274D6C76000625E8 /* TextAndIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1986AF4E274D6C76000625E8 /* TextAndIconView.swift */; };
 		19CDACED274AE0960072A155 /* iosAppTutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDACEC274AE0960072A155 /* iosAppTutorialsApp.swift */; };
 		19CDACEF274AE0960072A155 /* Mapkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDACEE274AE0960072A155 /* Mapkit.swift */; };
@@ -79,6 +80,7 @@
 		190A2A5D274C0A0C002B8332 /* ProgressIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressIndicatorView.swift; sourceTree = "<group>"; };
 		190A2A60274C0E96002B8332 /* ExpandingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingListView.swift; sourceTree = "<group>"; };
 		190A2A63274C13CA002B8332 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		1920BE91278B2889009AA5F8 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
 		1986AF4E274D6C76000625E8 /* TextAndIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAndIconView.swift; sourceTree = "<group>"; };
 		19CDACE9274AE0960072A155 /* iosAppTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosAppTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CDACEC274AE0960072A155 /* iosAppTutorialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppTutorialsApp.swift; sourceTree = "<group>"; };
@@ -352,6 +354,7 @@
 				19FCB14A2759360000AF28EA /* MeView.swift */,
 				19FCB14C2759362400AF28EA /* LandingView.swift */,
 				19FCB14E27593C9800AF28EA /* Prospects.swift */,
+				1920BE91278B2889009AA5F8 /* ImageSaver.swift */,
 			);
 			path = HotProspects;
 			sourceTree = "<group>";
@@ -510,6 +513,7 @@
 				19CDACEF274AE0960072A155 /* Mapkit.swift in Sources */,
 				19EF9A4427500D300075D4B4 /* FileDocumentViewMain.swift in Sources */,
 				19086428274EA7680062F6FF /* WebLinkView.swift in Sources */,
+				1920BE92278B2889009AA5F8 /* ImageSaver.swift in Sources */,
 				19ED522D275152C200ADA61F /* ContentView.swift in Sources */,
 				19EF710F2756A5510088D7AA /* HotProspects.swift in Sources */,
 				190515B8275810C400A7D0CA /* localNotifications.swift in Sources */,
@@ -699,6 +703,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access the camera";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to save your QR Code";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -729,6 +734,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need to access the camera";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "We need to save your QR Code";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
