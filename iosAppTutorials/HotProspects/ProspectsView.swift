@@ -6,6 +6,7 @@
 //
 import CodeScanner
 import SwiftUI
+import UserNotifications
 
 struct ProspectsView: View {
     
@@ -72,6 +73,13 @@ struct ProspectsView: View {
                                 Label("Mark Contacted", systemImage: "person.crop.circle.fill.badge.checkmark")
                               }
                             .tint(.green)
+                            
+                            Button {
+                                addNotification(for: prospect)
+                            } label: {
+                                Label("Remind Me", systemImage: "bell")
+                            }
+                            .tint(.orange)
                           }
                         }
                     
@@ -87,7 +95,7 @@ struct ProspectsView: View {
                     })
                     .sheet(isPresented: $isShowingScanner) {
                         
-                        //HEre the simulated data is on purpose seperated by \n
+                        //Here the simulated data is on purpose seperated by \n
                         CodeScannerView(codeTypes: [.qr], simulatedData: "Jordy Hershel\njordyhers@email.com", completion: self.handleScan)
                     }
         }
@@ -116,6 +124,47 @@ struct ProspectsView: View {
                 print("Sanning Failed \(error)")
             }
         }
+    
+    func addNotification(for prospect: Prospect) {
+        let center = UNUserNotificationCenter.current()
+        
+        
+        //By doing this we can schedule a notification request at a specific time
+        let addRequest = {
+            let content = UNMutableNotificationContent()
+            content.title = "Contact \(prospect.name)"
+            content.subtitle = prospect.emailAddress
+            content.sound = UNNotificationSound.default
+            
+            var  dateComponents = DateComponents()
+            dateComponents.hour = 9
+            let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: false)
+            
+            ///______________________________ enable this part to test immediate notifications ____________________________
+            //TEST DEBUG TO SEND IMMEDIATE NOTIFICATIONS
+//            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+            
+            
+            let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
+            center.add(request)
+        }
+        
+        // more code to come
+        center.getNotificationSettings { settings in
+            if settings.authorizationStatus == .authorized {
+                addRequest()
+            } else {
+                center.requestAuthorization(options:  [.alert,.badge, .sound ,.criticalAlert]) { success, error in
+                    if success {
+                        addRequest()
+                    } else {
+                        print("D'oh")
+                    }
+                }
+            }
+            
+        }
+    }
     }
 
 

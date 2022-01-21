@@ -22,6 +22,8 @@
 		190A2A61274C0E96002B8332 /* ExpandingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190A2A60274C0E96002B8332 /* ExpandingListView.swift */; };
 		190A2A64274C13CA002B8332 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 190A2A63274C13CA002B8332 /* VideoPlayerView.swift */; };
 		1920BE92278B2889009AA5F8 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1920BE91278B2889009AA5F8 /* ImageSaver.swift */; };
+		1920BE95278B83D1009AA5F8 /* SwiftBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1920BE94278B83D1009AA5F8 /* SwiftBase.swift */; };
+		1920BE97278B840D009AA5F8 /* SwiftBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1920BE96278B840D009AA5F8 /* SwiftBaseView.swift */; };
 		1986AF4F274D6C76000625E8 /* TextAndIconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1986AF4E274D6C76000625E8 /* TextAndIconView.swift */; };
 		19CDACED274AE0960072A155 /* iosAppTutorialsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDACEC274AE0960072A155 /* iosAppTutorialsApp.swift */; };
 		19CDACEF274AE0960072A155 /* Mapkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CDACEE274AE0960072A155 /* Mapkit.swift */; };
@@ -81,6 +83,8 @@
 		190A2A60274C0E96002B8332 /* ExpandingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandingListView.swift; sourceTree = "<group>"; };
 		190A2A63274C13CA002B8332 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		1920BE91278B2889009AA5F8 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		1920BE94278B83D1009AA5F8 /* SwiftBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBase.swift; sourceTree = "<group>"; };
+		1920BE96278B840D009AA5F8 /* SwiftBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBaseView.swift; sourceTree = "<group>"; };
 		1986AF4E274D6C76000625E8 /* TextAndIconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAndIconView.swift; sourceTree = "<group>"; };
 		19CDACE9274AE0960072A155 /* iosAppTutorials.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosAppTutorials.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19CDACEC274AE0960072A155 /* iosAppTutorialsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iosAppTutorialsApp.swift; sourceTree = "<group>"; };
@@ -215,6 +219,15 @@
 			path = VideoPlayer;
 			sourceTree = "<group>";
 		};
+		1920BE93278B83B9009AA5F8 /* SwiftBase */ = {
+			isa = PBXGroup;
+			children = (
+				1920BE94278B83D1009AA5F8 /* SwiftBase.swift */,
+				1920BE96278B840D009AA5F8 /* SwiftBaseView.swift */,
+			);
+			path = SwiftBase;
+			sourceTree = "<group>";
+		};
 		1986AF4D274D6C5E000625E8 /* TextAndIcon */ = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +259,7 @@
 		19CDACEB274AE0960072A155 /* iosAppTutorials */ = {
 			isa = PBXGroup;
 			children = (
+				1920BE93278B83B9009AA5F8 /* SwiftBase */,
 				19EF710D2756A5170088D7AA /* HotProspects */,
 				19ED52292751525000ADA61F /* WeSplit */,
 				19CDAD22274AE2BF0072A155 /* views */,
@@ -511,6 +525,7 @@
 				19FCB14D2759362400AF28EA /* LandingView.swift in Sources */,
 				19ED522B2751527900ADA61F /* WeSplitApp.swift in Sources */,
 				19CDACEF274AE0960072A155 /* Mapkit.swift in Sources */,
+				1920BE97278B840D009AA5F8 /* SwiftBaseView.swift in Sources */,
 				19EF9A4427500D300075D4B4 /* FileDocumentViewMain.swift in Sources */,
 				19086428274EA7680062F6FF /* WebLinkView.swift in Sources */,
 				1920BE92278B2889009AA5F8 /* ImageSaver.swift in Sources */,
@@ -528,6 +543,7 @@
 				19CDACED274AE0960072A155 /* iosAppTutorialsApp.swift in Sources */,
 				19FCB149275935E200AF28EA /* ProspectsView.swift in Sources */,
 				190515B22757EED900A7D0CA /* PublishingObservableObject.swift in Sources */,
+				1920BE95278B83D1009AA5F8 /* SwiftBase.swift in Sources */,
 				190515B42757F38200A7D0CA /* ImageHotProspects.swift in Sources */,
 				19CDAD2A274AE6270072A155 /* ScrollingViewMain.swift in Sources */,
 				19EF9A42275008580075D4B4 /* FileDocumentView.swift in Sources */,

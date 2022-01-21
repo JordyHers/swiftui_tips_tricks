@@ -44,7 +44,6 @@ struct TextFile: FileDocument {
 }
 
 
-
 struct FileDocumentView: View {
     @Binding var document: TextFile
     var body: some View {

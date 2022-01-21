@@ -27,3 +27,8 @@ struct StateView: View {
         
     }
 }
+struct StateView_Previews: PreviewProvider {
+    static var previews: some View {
+        StateView()
+    }
+}
