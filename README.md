@@ -128,4 +128,74 @@ struct HomePage_Previews: PreviewProvider {
 
  ```
  
-  ><img  width="307" height="600" alt="Screen Shot 2022-01-16 at 17 16 14" src="https://user-images.githubusercontent.com/49708438/150696299-1d7cd6f8-1165-43c6-b8e2-650c8da6d8d1.gif">
+  ><img  width="305" height="620" alt="Screen Shot 2022-01-16 at 17 16 14" src="https://user-images.githubusercontent.com/49708438/150696299-1d7cd6f8-1165-43c6-b8e2-650c8da6d8d1.gif">
+
+
+## 4. GameScene and SpriteKit
+**SwiftUi offers a handy tool to set up gameScene environment.**
+
+### 1. Implement SpriteKit along with SwiftUI
+
+```swift
+import SpriteKit
+import SwiftUI
+```
+
+### 2. Create a GameScene class which implements the SKScene protocol
+
+>The SKScene protocol requires 2 overriden functions: **didMove** and **touchesBegan**
+>the first function didMove is called everytime the character objects moves around the scene. In our case a red Box. Then touchesBegan takes care of first recording the coordinate of the first touch on the screen. After that create a red box (OBJECT) in the GameScene.
+
+```swift
+class GameScene : SKScene {
+    override func didMove(to view: SKView) {
+        physicsBody = SKPhysicsBody(edgeLoopFrom: frame)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        guard let touch = touches.first else { return }
+        let location = touch.location(in: self)
+        
+        let box = SKSpriteNode(color: .red, size: CGSize(width: 50, height: 50))
+        
+        box.position = location
+        box.physicsBody = SKPhysicsBody(rectangleOf: CGSize(width: 50, height: 50))
+        
+        addChild(box)
+
+    }
+}
+
+```
+
+
+### 3. Create the SpriteKitView
+> The final step is to create a new instance of our gameScene class. We will then attribut a constant size using CGSize.
+> The new instance of the GameScene will be then called in the body view with the necessary parameters.
+
+
+```swift
+struct SpriteKitView: View {
+    
+    var scene : SKScene {
+        let scene = GameScene()
+        scene.size = CGSize(width: 300, height: 400)
+        scene.scaleMode = .fill
+        return scene
+    }
+
+    var body: some View {
+        SpriteView(scene: scene).frame(width: 300, height: 400)
+    }
+}
+
+struct SpriteKitView_Previews: PreviewProvider {
+    static var previews: some View {
+        SpriteKitView()
+    }
+}
+
+```
+><img  width="305" height="620" alt="GameScene_SpriteKit" src="https://user-images.githubusercontent.com/49708438/150698032-15249cf7-a154-453e-8d55-a80653a26644.gif">
+
