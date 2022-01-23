@@ -24,5 +24,40 @@ struct ContentView_Previews: PreviewProvider {
 } 
 ```
 
-
 ## 2. StateView in SwiftUI
+
+> In SwiftUi the state of a page is handled by creating **@State** variables.
+
+
+```swift
+import SwiftUI
+
+
+struct StateView: View {
+    
+    @State private var isOn: Bool = false
+    
+    var body: some View {
+        
+        VStack {
+        
+            Toggle(isOn: $isOn) {
+                Text("")
+            }.labelsHidden()
+        
+            Text(self.isOn ? "🌞" : "🌙").font(.custom("Arial", size: 100))
+            
+        }.frame(width: 800, height: 800)
+        .background(self.isOn ? Color.white : Color.black)
+        
+    }
+}
+struct StateView_Previews: PreviewProvider {
+    static var previews: some View {
+        StateView()
+    }
+}
+
+```
+
+## 3. ScrollingPages in SwiftUI
