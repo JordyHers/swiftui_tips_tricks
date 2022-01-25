@@ -199,3 +199,61 @@ struct SpriteKitView_Previews: PreviewProvider {
 ```
 ><img  width="305" height="620" alt="GameScene_SpriteKit" src="https://user-images.githubusercontent.com/49708438/150698032-15249cf7-a154-453e-8d55-a80653a26644.gif">
 
+## 5. ColorPicker and Date Picker View
+**SwiftUi offers a handy tool to easily pick up colors.**
+
+### Color Picker 
+> First import SwiftUi
+
+```swift
+import SwiftUI
+```
+
+>Secondly just create a state variable that will have the initial value. **bgColor** Call the ColorPicker Component. **Don't forget to add frame and 
+>padding** 
+
+```swift
+
+struct ColorPickerView: View {
+    @State private var bgColor = Color.white
+    
+    var body: some View {
+        ColorPicker("Set the background color", selection: $bgColor).frame(height:200).padding(.horizontal)
+    }
+}
+
+struct ColorPickerView_Previews: PreviewProvider {
+    static var previews: some View {
+        ColorPickerView()
+    }
+}
+
+```
+### Date Picker
+
+>Similarly for DatePicker we need to create a state variable **date**. We then call DatePicker in a VStack
+> We should also add a **.datePickerStyle(GraphicalDatePickerStyle())**
+
+```swift
+struct DatePickerView: View {
+    @State private var date = Date()
+    
+    var body: some View {
+        //1.We create the datepicker we have to set labelsHidden() to hide the title
+        VStack {
+            Text("Enter your birthday").font(.title)
+            DatePicker("Enter your birthday",selection: $date)
+                .datePickerStyle(GraphicalDatePickerStyle())
+                .labelsHidden()
+                .frame(maxHeight:400)
+        }
+        
+    }
+}
+
+struct DatePickerView_Previews: PreviewProvider {
+    static var previews: some View {
+        DatePickerView()
+    }
+}
+```
