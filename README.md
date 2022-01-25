@@ -1,7 +1,12 @@
-# iOS Developer Must know tips
+# iOS Developer Must Know Tips
 This Repository is composed of different tips that all IOS developers must know. ⛺️     SwiftUi ARKit, Metal ,SceneKit Etc.🌟
  
- ## 1. Implement Map in SwiftUI
+- [Implement Map in SwiftUi ](#implement-map)
+- [State management](#stateview)
+ 
+ 
+ 
+ ## 1.Implement Map 
  
  ><img  width="537" alt="Screen Shot 2022-01-16 at 17 16 14" src="https://user-images.githubusercontent.com/49708438/150695665-1a073427-b9d1-4a74-870c-d840e619752e.jpeg">
 
@@ -27,7 +32,7 @@ struct ContentView_Previews: PreviewProvider {
 } 
 ```
 
-## 2. StateView in SwiftUI
+## 2.StateView 
 
 > In SwiftUi the state of a page is handled by creating **@State** variables.
 
@@ -63,7 +68,7 @@ struct StateView_Previews: PreviewProvider {
 
 ```
 
-## 3. ScrollingPages in SwiftUI
+## 3.ScrollingPages 
 
 **In swiftUI it is relatively easy to create tabView Pages. The first step is to create two struct [Widgets] Home Page - Second Page**
 Then we just need to call The distinct pages in the Main Function using a WINDOW GROUP -> TabView
@@ -134,14 +139,14 @@ struct HomePage_Previews: PreviewProvider {
 ## 4. GameScene and SpriteKit
 **SwiftUi offers a handy tool to set up gameScene environment.**
 
-### 1. Implement SpriteKit along with SwiftUI
+### a. Implement SpriteKit along with SwiftUI
 
 ```swift
 import SpriteKit
 import SwiftUI
 ```
 
-### 2. Create a GameScene class which implements the SKScene protocol
+### b. Create a GameScene class which implements the SKScene protocol
 
 >The SKScene protocol requires 2 overriden functions: **didMove** and **touchesBegan**
 >the first function didMove is called everytime the character objects moves around the scene. In our case a red Box. Then touchesBegan takes care of first recording the coordinate of the first touch on the screen. After that create a red box (OBJECT) in the GameScene.
@@ -170,7 +175,7 @@ class GameScene : SKScene {
 ```
 
 
-### 3. Create the SpriteKitView
+### c. Create the SpriteKitView
 > The final step is to create a new instance of our gameScene class. We will then attribut a constant size using CGSize.
 > The new instance of the GameScene will be then called in the body view with the necessary parameters.
 
