@@ -3,18 +3,23 @@ This Repository is composed of different tips that all IOS developers must know.
  
 - [Implement Map in SwiftUi ](#implement-map)
 - [State management](#stateview)
- 
+
  
  
  ## 1.Implement Map 
- 
- ><img  width="537" alt="Screen Shot 2022-01-16 at 17 16 14" src="https://user-images.githubusercontent.com/49708438/150695665-1a073427-b9d1-4a74-870c-d840e619752e.jpeg">
 
+>To Implement a Map in SwiftUI it is relatively easy. Just import MapKit first. 
  
 ```swift
 import MapKit
 import SwiftUI
+```
 
+
+> Then cretate a view. In our case **MapKitView**. After that, set up a MKCoordinateRegion that 
+> will take a **center** (lat and long) and a **span** value.
+
+```swift
 struct MapkitView: View {
     @State private var region =
     
@@ -31,6 +36,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 } 
 ```
+  ><img  width="537" alt="Screen Shot 2022-01-16 at 17 16 14" src="https://user-images.githubusercontent.com/49708438/150695665-1a073427-b9d1-4a74-870c-d840e619752e.jpeg">
 
 ## 2.StateView 
 
