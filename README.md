@@ -268,3 +268,68 @@ struct DatePickerView_Previews: PreviewProvider {
     }
 }
 ```
+
+## 6.File Document
+**SwiftUi allow users to create pdf and textFile.**
+
+> 1. import UniformTypeIdentifiers
+
+```swift
+import SwiftUI
+import UniformTypeIdentifiers
+```
+
+>Create the struct TextFile and extend it using |**FileDocument** protocol
+>This function takes care of the logic of saving and then writing the written plain text.
+
+```swift
+
+struct TextFile: FileDocument {
+    ///3. set up the type of the document
+    var text: String
+
+       init(text: String = "This is a brand new document! 📃") {
+           self.text = text
+       }
+
+       // A
+    static var readableContentTypes: [UTType] { [UTType.plainText] }
+
+       // B
+       init(configuration: ReadConfiguration) throws {
+           guard let data = configuration.file.regularFileContents,
+               let string = String(data: data, encoding: .utf8)
+           else {
+               throw CocoaError(.fileReadCorruptFile)
+           }
+           text = string
+       }
+
+       // C
+       func fileWrapper(configuration: WriteConfiguration) throws -> FileWrapper {
+           let data = text.data(using: .utf8)!
+           return .init(regularFileWithContents: data)
+       }
+}
+
+```
+### File Document View
+
+>Then we create the File document View. We need to set a **@Binding** Variable of type TextFile.
+>Finally we need to add the document variable to the TextEditor component.
+
+```swift
+struct FileDocumentView: View {
+    @Binding var document: TextFile
+    var body: some View {
+        TextEditor(text: $document.text)
+    }
+}
+
+struct FileDocumentView_Previews: PreviewProvider {
+    static var previews: some View {
+        FileDocumentView(document: .constant(TextFile()))
+    }
+}
+```
+
