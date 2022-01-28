@@ -8,14 +8,13 @@
 // SwiftUi allows the user to create an app that can create, save and Share PDF documents
 //or even text documnents
 
-///1. import UniformTypeIdentifiers
+
 import SwiftUI
 import UniformTypeIdentifiers
 
 ///2. Create the struct TextFile and extend it using FileDocument protocol
 ///This function takes care of the logic of saving and then writing the written plain text.
 struct TextFile: FileDocument {
-    
     ///3. set up the type of the document
     var text: String
 
