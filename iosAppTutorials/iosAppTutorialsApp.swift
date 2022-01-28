@@ -5,14 +5,14 @@
 //  Created by Jordy Hershel on 21.11.2021.
 //
 
-//import SwiftUI
-//
-//@main
-//struct iosAppTutorialsApp: App {
-//    var body: some Scene {
-//        WindowGroup {
-//            HotProspectsContentView()
-//
-//        }
-//    }
-//}
+import SwiftUI
+
+@main
+struct iosAppTutorialsApp: App {
+    var body: some Scene {
+        WindowGroup {
+           WebLinkView()
+
+        }
+    }
+}

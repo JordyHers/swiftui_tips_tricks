@@ -6,14 +6,14 @@
 
 
 
-//1. import AVKIT
+
 import AVKit
 import SwiftUI
 
 struct VideoPlayerView: View {
     var body: some View {
         VideoPlayer(player: AVPlayer(url: URL(string: "https://bit.ly/swswift")!)){
-            //2. You can add  a watermark on top of the video
+
             VStack {
                 Text("Watermark").font(.largeTitle).foregroundColor(.white).background(Color.black.opacity(0.7))
                     .clipShape(Capsule())
