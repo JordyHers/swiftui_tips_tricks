@@ -3,6 +3,7 @@ This Repository is composed of different tips that all IOS developers must know.
  
 - [Implement Map in SwiftUi ](#implement-map)
 - [State management](#stateview)
+- [Scrolling Pages](#scrolling-pages)
 
  
  
